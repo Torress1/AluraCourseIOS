@@ -1,0 +1,89 @@
+var pontuacao1 = 8.0
+var pontuacao2 = 10.0
+
+pontuacao1 > pontuacao2
+pontuacao1 >= pontuacao2
+pontuacao1 < pontuacao2
+pontuacao1 <= pontuacao2
+
+
+//Condicionais
+
+var numero1 = 5
+var numero2 = 2
+
+if numero2 > numero1 {
+    print("Número 2 é maior que número 1")
+} else if numero1 > numero2 {
+    print("Número 1 é maior que número 2")
+} else {
+    print("Número 1 é igual ao número 2")
+}
+
+var idade = 20
+idade >= 18 ? print("Maior de idade") : print("Não é maior de idade")
+
+//Switch
+
+var intervaloFechado = 10...20
+var intervaloSemiAberto = 10..<20
+
+var numero = 15
+
+switch numero {
+case 0...10: print("Número está entre 0 e 10")
+case 10...20: print("Número está entre 10 e 20")
+default: break
+}
+
+var intervaloFechado = 10...20
+var intervaloSemiAberto = 10..<20
+
+var numero = 25
+
+switch numero {
+case 0...10: print("Número está entre 0 e 10")
+case 10...20: print("Número está entre 10 e 20")
+default: print("Número é maior do que 20")
+}
+
+var animal = "Cachorro"
+
+switch animal {
+case "Cachorro", "Gato": print("Animal doméstico")
+default: print("Animal Selvagem")
+}
+
+switch numero {
+case _ where numero % 2 == 0: print("Número é par")
+case _ where numero % 2 != 0:print("Número é ímpar")
+default: break
+}
+
+//Atividade
+
+//1 - Crie uma constante que armazene uma pergunta “Qual o valor de 8 x 2?” no formato String. A seguir, crie uma constante que armazene a resposta correta e uma constante que armazene a resposta do usuário;
+
+let pergunta = "Qual o valor de 8 x 2?"
+let respostaCorreta = 16
+let minhaResposta = 10
+var pontos = 0
+
+if minhaResposta == respostaCorreta {
+    pontos += 1
+} else {
+    pontos -= 1
+}
+
+print(pontos)
+
+//2 - Faça um programa que controle a entrada de pessoas em uma festa. Siga os requisitos abaixo: Crie uma constante que armazene a idade da pessoa; Crie uma constante que armazene se a pessoa está com o RG em mãos; Caso ela tenha idade superior ou igual a 18 e esteja com o RG em mãos, ela pode entrar na festa (exiba no console “Pode entrar”). Caso contrário, não pode entrar (exiba no console “Não pode entrar”).
+
+let idade = 22
+let possuiRG = true
+
+if idade >= 18 && possuiRG {
+  print("Pode entrar")
+} else {
+  print("Não pode entrar")
+}
