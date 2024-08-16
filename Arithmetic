@@ -1,0 +1,13 @@
+//Questão um: A partir de uma variável que armazena um valor de temperatura em celsius, crie uma outra variável que faça o cálculo dessa temperatura em celsius para fahrenheit.
+
+let celsius = 30.5
+let fahreneight = (celsius * 9/5) + 32
+print("Em fahrenheit, a temperatura é de \(fahreneight)ºF.")
+
+//Questão dois: Crie três variáveis que representam três notas de diferentes alunos. A seguir, crie uma variável que calcule a média dessas notas e mostre essa média no console.
+
+let nota01 = 8.0
+let nota02 = 7.5
+let nota03 = 9.0
+let mediaDasNotas = (nota01 + nota02 + nota03) / 3
+print("A média das notas é \(mediaDasNotas).")
