@@ -1,0 +1,13 @@
+var inicial: Character = "G"
+var nome = "Giovanna"
+var apelido = "Gi"
+var idade = "22"
+var altura = 1.57
+var gosto = true
+
+print (inicial)
+print (nome)
+print (apelido)
+print (idade)
+print (altura)
+print (gosto)
